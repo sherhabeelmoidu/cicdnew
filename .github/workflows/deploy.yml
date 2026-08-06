@@ -52,7 +52,7 @@ jobs:
 
           sudo mkdir -p /var/www/html
           sudo rm -rf /var/www/html/*
-          sudo cp -r /home/ec2-user/website/* /var/www/html/
+          sudo cp -r /home/ubuntu/website/* /var/www/html/
 
           sudo chown -R apache:apache /var/www/html
           sudo chmod -R 755 /var/www/html
