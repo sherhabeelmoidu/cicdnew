@@ -40,7 +40,7 @@ jobs:
           scp -i ~/.ssh/id_rsa \
             -o StrictHostKeyChecking=no \
             -r ./* \
-            ec2-user@$EC2_HOST:/home/ec2-user/website/
+            ec2-user@$EC2_HOST:/home/ubuntu/website/
 
       - name: Deploy website
         env:
