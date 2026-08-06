@@ -31,7 +31,7 @@ jobs:
           ssh -i ~/.ssh/id_rsa \
             -o StrictHostKeyChecking=no \
             ec2-user@$EC2_HOST \
-            "mkdir -p /home/ec2-user/website"
+            "mkdir -p /home/ubuntu/website"
 
       - name: Copy website files using SCP
         env:
